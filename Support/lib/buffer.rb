@@ -99,7 +99,7 @@ class Buffer
     find(options) { %r{def\s+(\w+)\s+=\s+\{} } 
   end
 
-  def find_nearest_string_or_symbol(current_line = current_line)
+  def find_nearest_string_or_symbol(current_line = self.current_line)
     current_line.find_nearest_string_or_symbol(column_number)
   end
   
